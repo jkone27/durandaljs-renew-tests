@@ -4,7 +4,8 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "snowpack dev",
+    "build": "snowpack build"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +15,8 @@
     "jquery": "^2.2.1",
     "knockout": "^3.5.1",
     "require-text": "^0.0.1"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
   }
 }

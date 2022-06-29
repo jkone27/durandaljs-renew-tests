@@ -22,6 +22,6 @@ requirejs.config({
         });
 
         app.start().then(function() {
-            app.setRoot('shell');
+            app.setRoot('shell', undefined, 'applicationHost');
         });
     });
