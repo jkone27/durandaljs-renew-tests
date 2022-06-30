@@ -11,7 +11,7 @@
                 },
                 "useBuiltIns": "usage",
                 "corejs": "3.6.5",
-                "modules" : "auto"
+                "modules" : "amd"
             }
         ]
     ]
