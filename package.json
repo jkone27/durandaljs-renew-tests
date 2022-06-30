@@ -4,6 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
+    "build" : "babel app --out-dir lib",
     "start": "node index.js"
   },
   "author": "",
@@ -14,5 +15,10 @@
     "jquery": "^2.2.1",
     "knockout": "^3.5.1",
     "require-text": "^0.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6"
   }
 }
