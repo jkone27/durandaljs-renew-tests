@@ -4,7 +4,9 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "babel" : "babel app -d dist --copy-files",
+    "build" : "npm run babel",
+    "start": "npm run build && node ./dev-serve.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +16,11 @@
     "jquery": "^2.2.1",
     "knockout": "^3.5.1",
     "require-text": "^0.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel": "^6.23.0"
   }
 }
