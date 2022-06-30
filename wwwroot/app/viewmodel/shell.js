@@ -3,7 +3,8 @@ define(function (require) {
 
     var routes = [
         { route: '', title: 'Home', moduleId: 'viewmodel/components/home', nav: true },
-        { route: 'one', title: 'One', moduleId: 'viewmodel/components/one', nav: true }
+        { route: 'one', title: 'One', moduleId: 'viewmodel/components/one', nav: true },
+        { route: 'two', title: 'Two', moduleId: 'viewmodel/components/two', nav: true }
     ];
 
     var activator = function () {
