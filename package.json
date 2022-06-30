@@ -4,8 +4,8 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "build" : "babel app --out-dir lib",
-    "start": "node index.js"
+    "build" : "babel wwwroot/app --out-dir lib --copy-files -x \".mjs\"",
+    "start": "node dev-serve.js"
   },
   "author": "",
   "license": "ISC",

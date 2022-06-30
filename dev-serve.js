@@ -6,7 +6,7 @@ app.use(express.static('wwwroot'));
 app.use(express.static('node_modules'));
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + "/wwwroot/index.html");
+    res.sendFile(__dirname + "/lib/index.html");
 });
 
 app.listen(port, () => {
