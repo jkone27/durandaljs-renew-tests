@@ -1,4 +1,4 @@
-import app from 'durandal/app';
+import sayHello from './twoService';
 import ko from 'knockout';
 
 // just because you can :P
@@ -7,10 +7,10 @@ interface ITwo {
     sayHello: () => void
 }
 
-let two = {
+const two = {
     name: ko.observable(''),
     sayHello: function () {
-        app.showMessage('Hello ' + this.name() + '! Nice to meet you.', 'Greetings');
+        sayHello(this.name());
     }
 };
 

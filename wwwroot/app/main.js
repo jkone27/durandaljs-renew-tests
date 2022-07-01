@@ -22,8 +22,6 @@ define(function (require) {
     var system = require('durandal/system');
     var app = require('durandal/app');
 
-    
-
     system.debug(true);
 
     app.title = 'Durandal Starter Kit';

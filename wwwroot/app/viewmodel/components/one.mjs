@@ -1,11 +1,9 @@
-import app from 'durandal/app';
 import ko from 'knockout';
+import sayHello from './oneService';
 
-let one = {
+const one = {
     name: ko.observable(),
-    sayHello: function () {
-        app.showMessage('Hello ' + this.name() + '! Nice to meet you.', 'Greetings');
-    }
+    sayHello: function () { sayHello(this.name()); }
 };
 
 export default one;

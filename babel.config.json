@@ -14,8 +14,9 @@
                 },
                 "useBuiltIns": "usage",
                 "corejs": "3.6.5",
-                "modules": "amd"
+                "modules": "auto"
             }
         ]
-    ]
+    ],
+    "plugins": ["babel-plugin-transform-modules-simple-amd-with-default-exports"]
 }
