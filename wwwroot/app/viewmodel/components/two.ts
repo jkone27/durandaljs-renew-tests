@@ -1,4 +1,4 @@
-import sayHello from './twoService';
+import hello from './twoService';
 import ko from 'knockout';
 
 // just because you can :P
@@ -10,7 +10,7 @@ interface ITwo {
 const two = {
     name: ko.observable(''),
     sayHello: function () {
-        sayHello(this.name());
+        hello(this.name());
     }
 };
 

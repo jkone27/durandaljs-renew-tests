@@ -1,9 +1,9 @@
+import hello from './oneService';
 import ko from 'knockout';
-import sayHello from './oneService';
 
 const one = {
     name: ko.observable(),
-    sayHello: function () { sayHello(this.name()); }
+    sayHello: function () { hello(this.name()); }
 };
 
 export default one;
